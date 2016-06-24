@@ -32,6 +32,11 @@ To request a SAS token, send an HTTP POST to your function URI, including the AP
 - `blobName` - *optional*. Used to scope permissions to a particular blob
 - `permissions` - *optional*. Default value is read permissions. Possible values are: "a" (Add), "r" (Read), "w" (Write), "d" (Delete), "l" (List). Concatenate multiple permissions, such as "rwa" = Read, Write, Add
 
+Response:
+
+- `token` - SAS token, which does **not** include a leading "?"
+- `uri` - Resource URI with token appended as query string
+
 ## Learn more
 
 - [Authentication and authorization in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-authentication-overview/)
