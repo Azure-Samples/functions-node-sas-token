@@ -4,13 +4,6 @@
 
 var azure = require('azure-storage');
 
-// Setup: npm install 
-// Go to Function app settings -> App Service settings -> Tools -> Console and type the following:
-//    > cd <functionName>
-//    > npm install
-// Or, go to http://yoursite.scm.azurewebsites.net/DebugConsole navigate to site/wwwroot/YourFunctionName
-// and do npm install in the console window
-
 module.exports = function(context, req) {
     if (req.body.container) {
         // The following values can be used for permissions: 
